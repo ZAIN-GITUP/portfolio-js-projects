@@ -1,0 +1,91 @@
+ /*------------------------ contact--------------------*/
+ .heading-contact
+ {
+    font-size: 3rem;
+padding-top: 9%;
+padding-left: 45%;
+
+}
+    .contact-container h2{
+        position: absolute;
+        margin-top: 0rem;
+    }
+    .contact-container form 
+    {
+        max-width: 70rem;
+        margin: 2rem auto;
+        display: block;
+        position: absolute;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        margin-left: 25rem;
+    }    
+    .contact-container form .box{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .contact-container form .box input,
+    .contact-container form textarea{
+        color: var(--text-color);
+        background: var(--second-bg-color);
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 1.5rem;
+        color: var(--text-color);
+        margin: .7rem 0;
+        cursor: pointer;
+    }
+    .contact-container form .btn{
+        padding:  1rem 2.8rem ;
+        margin-right: 3rem;
+        margin-left: 27rem;
+        margin-bottom: 5rem;
+        align-items: center;
+        display: inline-block;
+        background: var(--main-color);
+        border-radius: 4rem;
+        box-shadow: 0  0  1rem var(--main-color);
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: var(--second-bg-color);
+        letter-spacing: 0.01rem;
+        transition: 5ms ease ;
+    }
+    .contact-container form .box input{
+        width: 49%;
+    }
+    .contact-container form textarea{
+        resize:none ;
+    }
+    .contact-container form .btn:hover{
+        box-shadow: none;
+    }
+    .footer{
+        width: 200%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2rem 9%;
+        
+    }
+    .footer-text p
+{
+font-size: 1.6rem;
+}
+.footer-top a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+  margin-right: 4rem;
+  margin-left: 2rem;
+   border-radius: .8rem;
+}
+.footer-top a i{
+    font-size: 2.4rem ;
+    color: var(--second-bg-color);
+} 

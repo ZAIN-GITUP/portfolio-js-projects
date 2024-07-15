@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght300,400,500,600,700,800,900&display=swap');
+*{
+    margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'poppins','sans-serif';
+}
+:root{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    overflow: hidden;
+}
+body
+{
+    background:var(--bg-color);
+    color: var(--text-color);
+    margin: 2rem 2rem 2rem 2rem ;
+    padding: 2rem 2rem 2rem 2rem ;
+}
+.section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    
+}
+
+.containers{
+
+    clip-path:circle(46.1%);
+    align-items: center;
+    justify-content: center;
+    margin: -35rem 5rem 12rem 69rem ;
+    padding: .8rem .6rem .6rem .7rem;
+    
+}
+
+.home-content h3 {
+    font-size: 3rem;
+     font-weight: 400;
+     padding: 25.5rem 0rem 0rem  3.5rem  ;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+.home-content h1{
+    font-size: 4.6rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    padding: .5rem 0rem 0rem  3.5rem  ;
+}
+.home-content h2{
+    font-size: 3rem;
+    font-weight: 400;
+    padding: .5rem 0rem 0rem  3.5rem  ;
+}
+.home-content h2:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+span{
+    color: var(--main-color);
+}
+.home-content p{
+    font-size: 1.6rem;
+    font-weight: 100;
+    padding:0.001rem  3rem 3rem 3.5rem ;
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: index 100; 
+}
+.header.sticky{
+    border-bottom:.1rem solid rgba(0,0,0,.2) ;
+
+}
+.logo{
+    font-size: 2.5rem;
+    color:var(--text-color);
+    font-weight: 600;
+cursor: default;
+}
+.navbar a{
+    font-size: 1.7rem;
+    color:var(--text-color);
+    margin-left: 4rem;
+    transition: 3ms;
+}
+.navbar a:hover,  
+.navbar a.active{
+    color: var(--main-color);
+
+}
+#menu-icon{
+    font-size: 10rem;
+    color:var(--text-color);
+    display: none;
+}
+.socail-media a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    font-size: 2rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: -15px -50px -25px 55px ;
+transition: 5ms ease;
+
+}
+.socail-media a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.btn{
+    padding:  1rem 2.8rem ;
+    margin: 2rem 5rem 5rem 5rem;
+    align-items: center;
+    display: inline-block;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0  0  1rem var(--main-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--second-bg-color);
+    letter-spacing: 0.01rem;
+    transition: 5ms ease ;
+}
+.btn:hover{
+    box-shadow: none;
+}
+/*---------about------------------*/
+
+.about{
+    display:flex;
+    width: 98%;
+    height: 56em;
+    background: var(--second-bg-color);
+        padding-top: 16rem;
+    padding-bottom: 10rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.heading-about{
+    font-size: 3rem;
+padding-top: 8%;
+padding-left: .008%;
+
+}
+.about-img{
+    margin: 1% 0% 0% 0%;
+    padding: -3rem .4rem .5rem .9rem;
+    border-color:var(--main-color);
+     clip-path:circle(46%);
+}
+.about-contant{
+    display:block;
+    padding: 4rem .9rem .9rem  .9rem ;
+    margin: 11% 0% 1% 1%;
+}
+.about p{
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+.about h2{
+    font-size: 3rem;
+}
+.about h3{
+    
+    font-size: 2.2rem;
+
+}
+.about .btn{
+    padding:  1rem 2.8rem ;
+    margin: 1rem 0rem 10rem 2rem;
+    align-items: center;
+    display: inline-block;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0  0  1rem var(--main-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--second-bg-color);
+    letter-spacing: 0.01rem;
+    transition: 5ms ease ;
+
+}
+.about .btn:hover{
+    box-shadow: none;
+}
+/*------------------------------services------------------*/
+
+.service-content{
+    display: flex;
+    transition: 4ms ease;
+    border-color: var(--main-color);
+    border-style: dashed;
+    
+}
+.heading{
+    font-size: 3rem;
+padding-top: 8%;
+padding-left: 45%;
+
+}
+.srv-container1{
+    padding: .4rem .4rem .4rem .4rem;
+    background: var(--second-bg-color);
+    margin-top:4rem;
+    margin-bottom: 02em;
+    margin-left:  5em;
+    border-radius: 32%;
+    border: 0.09em solid var(--bg-color);
+   height: 32rem;
+   width:42rem ;
+   
+}
+.srv-container1 h2{
+    font-size: 2.5rem;
+    margin-left: .4rem;
+}
+.srv-container1 p{
+    text-align: left;
+    padding: 1rem 1rem 1rem 1rem;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+.srv-container1 i{
+    font-size: 6rem;
+    color: var(--main-color);
+    margin-left: 15rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.srv-container1 .btn{
+    margin-left: 13rem;
+    margin-top: .9rem;
+}
+.srv-container2 .btn{
+    margin-left: 14rem;
+    margin-top: .9rem;}
+.srv-container2{
+
+    padding: .6rem .6rem .6rem .6rem;
+    background: var(--second-bg-color);
+    margin-top:4rem;
+    margin-bottom: 2rem;
+    margin-left:  9em;
+    border-radius: 32%;
+    border: 0.09em solid var(--bg-color);
+   height: 32rem;
+   width:42rem ;
+   
+}
+.srv-container2 p{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.srv-container2 i{
+    font-size: 6rem;
+    color: var(--main-color);
+    margin-left: 16rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;}
+    .srv-container2 h2{
+        font-size: 2.5rem;
+        margin-left: 2rem;
+    }
+    .service-content :hover{
+
+        border-color: var(--main-color);
+        transform:scale(1.06)
+
+    }
+    .srv-container2 :hover{
+        border-color: var(--main-color);
+    
+    }
+   /*-------------------porfolio------------------*/
+   .heading-port
+{
+    font-size: 3rem;
+padding-top: 9.6%;
+padding-left: 45%;
+
+}
+   
+   .Portfolio-container
+    {
+     margin-top: 2rem;
+     margin-bottom: 0.7rem;
+     margin-left: 11rem;
+     margin-right: 2rem;
+    padding: 0.9rem 0.9rem 0.9rem 0.9rem  ;
+        display:flex;
+        height: 50%;
+        width: 85%;
+    }
+    .Portfolio-container1
+    {
+        margin-top: 1rem;
+     margin-bottom: 11rem;
+     margin-left: 11rem;
+     margin-right: 2rem;
+        padding: 1rem 1rem 1rem 1rem  ;
+        display: flex;
+        height: 30%;
+        width: 85%;
+
+    }
+    .Portfolio-box{
+        height: 50%;
+        width: 50%;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-bottom: -1rem;
+        margin-left: 05rem;
+        margin-top: 1rem;
+        margin-bottom: 0em;
+        margin-right: 10rem;
+        border: 0.37rem solid var(--bg-color);
+    }
+    .Portfolio-layer h4{
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding: 0.1rem 0.2rem 0.1rem 0.1rem ;
+        text-align: center;
+
+    }
+    .Portfolio-box:hover{
+        border-color: var(--main-color);
+        transform:scale(1.20)
+
+    }
+    .Portfolio-layer i{
+        font-size: 1.3rem;
+        font-weight: 100;
+        
+        justify-content: center;
+        padding: 1rem 2rem 0rem 0rem;
+    }
+    /*===================scroll  buttons==============*/
+
+      /*============Home scroll  buttons==============*/
+
+      .scroll-down-home{
+        background: var(--text-color);
+        font-size: 1.6rem;
+        position: absolute;
+      margin-left: 92.2%;
+      margin-top:-28%;
+
+      }
+    /*============ about scroll  buttons==============*/
+    .scroll-top{
+        background: var(--text-color);
+        font-size: 1.6rem;
+        position: absolute;
+      margin-left: 83.2%;
+      margin-top: 13%;
+    }
+    .scroll-down{
+        background: var(--text-color);
+        font-size: 1.6rem;
+        position: absolute;
+      margin-left: 83.2%;
+      margin-top: 16%;
+    }
+     /*============ servics  scroll  buttons==============*/
+     .scroll-top-svr{
+        background: var(--text-color);
+        font-size: 1.6rem;
+        position: absolute;
+      margin-left: 92%;
+      margin-top: 14.8%;
+    }
+    .scroll-down-svr{
+        background: var(--text-color);
+        font-size: 1.6rem;
+        position: absolute;
+      margin-left: 92%;
+      margin-top: 19%;
+    }
+           /*============ portfolio scroll  buttons==============*/
+     .scroll-top-ptf{
+        background: var(--text-color);
+        font-size: 1.6rem;
+        position: absolute;
+      margin-left: 81.7%;
+      margin-top: 13.8%;
+    }
+    .scroll-down-ptf{
+        background: var(--text-color);
+        font-size: 1.6rem;
+        position: absolute;
+      margin-left: 81.7%;
+      margin-top: 18%;
+    }
+                /*============ contact scroll  buttons==============*/
+     .scroll-top-cnt{
+        background: var(--text-color);
+        font-size: 1.6rem;
+        position: absolute;
+      margin-left: 114%;
+      margin-top: 22.2%;
+      color: #0ef;
+    }
+      
+      
